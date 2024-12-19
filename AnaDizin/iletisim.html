@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <style>
+        /* Sayfa genel stili */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: powderblue;
+        }
+
+        /* Formun stili */
+        form {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: red;
+            outline: none;
+            box-shadow: 0 0 5px rgba(139, 248, 142, 0.5);
+        }
+
+        button {
+            background-color: powderblue;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        p {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/sivanmiroglu854@gmail.com" method="POST">
+        <h1>İletişim Formu</h1>
+        <div>
+            <label for="name">İsim</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div>
+            <label for="surname">Soyisim</label>
+            <input type="text" name="surname" id="surname" required>
+        </div>
+
+        <div>
+            <label for="email">E-posta</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="age">Yaşınız</label>
+            <input type="number" min="15" max="17" name="age" id="age" required>
+        </div>
+
+        <div>
+            <label for="message">Mesajınız</label>
+            <textarea id="message" name="message" rows="4" maxlength="400" wrap="soft" required></textarea>
+            <p>(Maksimum 400 karakter. Lütfen en fazla 4 satır yazınız.)</p>
+        </div>
+
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
