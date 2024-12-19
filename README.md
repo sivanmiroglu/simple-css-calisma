@@ -1,0 +1,1 @@
+Bu proje, basit ve minimalist tasarımlar için bir CSS framework oluşturma denemesidir. Projede temel stiller ve düzenler yer alıyor. Amacı, kolayca özelleştirilebilir ve hafif bir CSS dosyası sunmaktır.
